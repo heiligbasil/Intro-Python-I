@@ -17,10 +17,7 @@ print(f1(1, 2))
 # Note: Google for "python arbitrary arguments" and look for "*args"
 
 def f2(*args):
-    sums = 0
-    for arg in args:
-        sums += arg
-    return sums
+    return sum(args)
 
 
 print(f2(1))  # Should print 1
